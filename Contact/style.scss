@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+$poppins: 'Poppins', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body {
+    font-family: $poppins;
+    background-color: #001666;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    .container {
+        width: 80%;
+        margin: 0 auto;
+       
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 2em;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+    
+            h3 {
+                color: #aaa;
+                font-size: calc(1vw + .1rem);
+                margin-bottom: 1em;
+            }
+    
+            input, textarea {
+                border: none;
+                background-color: rgb(238, 238, 238);
+                padding: 1em;
+                outline: none;
+                border-radius: 2px;
+                font-family: $poppins;
+                margin-bottom: 1em;
+            }
+    
+            ::placeholder {
+                font-size: calc(1vw + .1rem);
+            }
+    
+            button {
+                background: #fc6161;
+                border: none;
+                outline: none;
+                padding: 1em;
+                width: 100px;
+                height: 40px;
+                border-radius: 50px;
+                color: #fff;
+                margin: 0 auto;
+            }
+        }
+    
+    }
+    
+    
+    
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        .container {
+            ::placeholder {
+                font-size: calc(1vw + .3rem) !important;
+            }
+        
+            h3 {
+                font-size: calc(1vw + .5rem) !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+
+            ::placeholder {
+                font-size: calc(1vw + .3rem) !important;
+            }
+        
+            h3 {
+                font-size: calc(1vw + .5rem) !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header {
+         
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+            ::placeholder {
+                font-size: calc(1vw + .4rem) !important;
+            }
+        
+            h3 {
+                font-size: calc(1vw + .5rem) !important;
+            }
+        }
+    }
+}

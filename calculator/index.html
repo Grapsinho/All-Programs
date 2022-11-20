@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js" defer></script>
+    <title>Calculator / Giorgi Giguashvili</title>
+</head>
+<body>
+    <section class="calculator">
+        <img src="assets/SPLITTER.svg" alt="logo" class="logo">
+        <div class="container">
+            <div class="first-col">
+                <h1 class="bill">Bill</h1>
+                <form>
+                    <img src="assets/$.svg" alt="$" class="$">
+                    <input type="number" name="bill" id="bill">
+                </form>
+
+                <div class="block">
+                    <h2 class="tip">Select Tip %</h2>
+                    <div class="tip-cont flex wrap">
+                        <div class="gio gio1 item" id="gio1">5%</div>
+                        <div class="gio1 item" id="gio2">10%</div>
+                        <div class="gio1 item active-tip" id="gio3">15%</div>
+                        <div class="gio1 item" id="gio4">25%</div>
+                        <div class="gio1 item" id="gio5">50%</div>
+                        <div class="custom"><input type="number" class="custom-i" placeholder="Custom"></div>
+                    </div>
+                </div>
+
+                <div class="people">
+                    <h1 class="people">Number of people</h1>
+                    <form>
+                        <img src="assets/Combined Shape.svg" alt="user" class="user">
+                        <input type="number" name="people" id="people">
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="second-col">
+                <div class="flex">
+                    <div class="item1 item">
+                        <h1>Tip amount</h1>
+                        <p>/ person</p>
+                    </div>
+    
+                    <div class="item2 item">
+                        <h1 class="money" id="tip"></h1>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="item3 item">
+                        <h1>Total</h1>
+                        <p>/ person</p>
+                    </div>
+    
+                    <div class="item4 item">
+                        <h1 class="money" id="total"></h1>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <a href="" class="reset">RESET</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,21 @@
+Inputs:
+Your Current age
+And age would you like to retire
+
+Process:
+Calculate
+Display
+
+Outputs: 
+How many years are left before you retire
+and current year and year you retire
+
+Tests: 
+if age is 25 and retire age is 65 we will subtract these
+numbers and the sum will be 40
+
+and if our current year is 2022 we will add our sum and it will
+be 2062
+
+and if retire age value is negative thats means the user already retired
+in this case you need if statement user already retired and retire year will be current year - retire age

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+/* SET UP */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #9BB5F1;
+}
+
+
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+  height: 600px;
+  overflow: hidden;
+  padding-block: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.mySlides {
+  height: 80%;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #F8FCFB;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px #D1CCBC;
+  border-radius: 30px;
+  padding: 0 2em;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 30px;
+  box-shadow: 0 -1px 10px blue;
+}
+
+.author {
+  font-size: 1.3rem;
+  color: #0B8DBA;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.job {
+  color: #4ea2e7;
+  font-size: .9rem;
+  text-align: center;
+  margin-top: .4em;
+  margin-bottom: .7em;
+}
+
+.info {
+  color: #42B0D4;
+  font-size: .8rem;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translateY(-50%);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation: fade .4s ease-in-out;
+}
+
+@keyframes fade {
+  from{transform: translateX(90%) scale(.6);}
+  to{transform: translateX(0) scale(1);}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: rgba(33, 128, 38, 0.753);
+    border: 2px solid green;
+    padding: 2em;
+    color: #fff;
+}

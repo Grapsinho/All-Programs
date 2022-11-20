@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #262626;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+
+    h1 {
+        color: #1a7f78;
+        font-size: calc(2vw + .5rem);
+    }
+}
+
+
+.section {
+    padding: 2em;
+    margin: 8em auto;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+
+        & > div {
+            background-color: #dedede;
+            padding: 1em;
+            text-align: center;
+             h1 {
+                color: #db2c00;
+                letter-spacing: .1rem;
+                margin-bottom: .5em;
+             }
+
+             p {
+                color: #255b98;
+             }
+        }
+    }
+}
+
+section:nth-child(odd) {
+    background-color: #db2c00;
+    padding: 5em 2em;
+}
+
+section {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+section.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.second {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.second.dactive {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.second-col {
+    transition-delay: .4s;
+}
+
+.third-col {
+    transition-delay: .6s;
+}
+
+
+@media screen and (max-width: 780px) {
+        .section {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+        
+                & > div {
+                     h1 {
+                        font-size: calc(2vw + .1rem) !important;
+                     }
+        
+                     p {
+                        font-size: calc(1vw + .3rem) !important;
+                     }
+                }
+            }
+        }
+    
+        header {
+            h1 {
+                font-size: calc(2vw + .9rem);
+            }
+        }
+}
+
+@media screen and (max-width: 500px) {
+    .section {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+    
+            & > div {
+                 h1 {
+                    font-size: calc(2vw + .5rem) !important;
+                 }
+    
+                 p {
+                    font-size: calc(1vw + .3rem) !important;
+                 }
+            }
+        }
+    }
+
+    header {
+        h1 {
+            font-size: calc(2vw + .9rem);
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .section {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+    
+            & > div {
+                 h1 {
+                    font-size: calc(2vw + .3rem) !important;
+                 }
+    
+                 p {
+                    font-size: calc(1vw + .3rem) !important;
+                 }
+            }
+        }
+    }
+
+    header {
+        h1 {
+            font-size: calc(2vw + .9rem);
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+*, *::after, *::before {
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider-container .left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.slider-container .left-slide > div {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-container .left-slide h1 {
+  color: white;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.slider-container .left-slide p {
+  color: white;
+}
+
+.slider-container .right-slide {
+  height: 100%;
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.slider-container .right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.slider-container .action-buttons .up-button {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.slider-container button {
+  color: #aaa;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.slider-container .down-button {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slider-container .up-button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.slider-container button:hover {
+  color: #222;
+}
+
+.slider-container button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
